@@ -1,4 +1,4 @@
-# hdCard creator
+# hCard creator
 
 ### Sample code written by Alireza Dezfoolian
 
@@ -8,7 +8,7 @@ This is a time limited development project.
 
 For the experience, make sure you connected to the Internet while running the project locally to download google fonts.
 
-Only `jpg`, `jpeg`, `png`, `svg`, `gif`, `bmp`, `wbm` formats are allowed to be uploaded as image for hCard.
+Only `jpg`, `jpeg`, `png`, `svg`, `gif`, `bmp`, `wbm` , `ico` formats are allowed to be uploaded as image for hCard.
 
 Main front end libraries and technologies used in this project:
   - React v16.0 (not support <IE11, but polyfill included)
