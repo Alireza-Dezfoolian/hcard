@@ -1,11 +1,8 @@
 import "babel-polyfill";
-import 'core-js/es6/map';
-import 'core-js/es6/set';
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import './index.scss';
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
@@ -14,7 +11,10 @@ import allReducers from './reducers/all-reducers';
 
 const store = createStore(
   allReducers,
-  applyMiddleware(createLogger)
+  compose(
+    applyMiddleware(createLogger),
+    window.devToolsExtension ? window.devToolsExtension() : f => f
+  )
 );
 
 ReactDOM.render(
