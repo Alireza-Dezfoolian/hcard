@@ -6,7 +6,9 @@ To see the demo online, visit [here]
 
 This is a time limited development project.
 
-For the experience, make sure you connected to the Internet while running the project locally to download google fonts.
+You can use `Redux DevTools` to track the states.
+
+For the best experience, make sure you connected to the Internet while running the project locally to download google fonts.
 
 Only `jpg`, `jpeg`, `png`, `svg`, `gif`, `bmp`, `wbm` , `ico` formats are allowed to be uploaded as image for hCard.
 

@@ -20,7 +20,7 @@ class Uploader extends React.Component {
 
       let reader = new FileReader();
       let file = e.target.files[0] || this.state.file;
-      let isAcceptable = this.acceptableFiles.indexOf(file.name.split('.').pop().toLowerCase()) > -1;
+      let isAcceptable = file.name ? this.acceptableFiles.indexOf(file.name.split('.').pop().toLowerCase()) > -1 : false;
 
       if (isAcceptable) {
         reader.onloadend = () => {
