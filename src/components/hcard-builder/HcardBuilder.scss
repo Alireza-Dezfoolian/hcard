@@ -1,0 +1,90 @@
+@import '../.././variables';
+
+.hcard-builder {
+  display: table-cell;
+  vertical-align: top;
+  width: 50%;
+  padding: 4%;
+
+  h1 {
+    font-size: 1.75rem;
+    color: $dark-blue;
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+
+  legend {
+    text-transform: uppercase;
+    border-bottom: 1px solid $light-blue-grey;
+    color: $light-blue-grey;
+    width: 100%;
+    font-size: .65rem;
+    padding: 4px 0;
+    margin: 20px 0;
+    font-weight: 700;
+  }
+
+  label:not([for="file"]) {
+    display: inline-block;
+    color: $dark-blue;
+    text-transform: uppercase;
+    font-size: .7rem;
+    margin-bottom: 4px;
+  }
+
+  input {
+    font-family: "Merriweather", Georgia, Serif;
+    padding: 0 10px;
+    font-size: 1rem;
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    height: 34px;
+    border: 1px solid $medium-grey;
+    border-radius: 2px;
+  }
+
+  .left {
+    display: inline-block;
+    vertical-align: top;
+    width: 47.5%;
+    margin: 6px 2.5% 0 0;
+  }
+
+  .right {
+    @extend .left;
+    margin: 6px 0 0 2.5%;
+  }
+
+  .buttons {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: $desktop-width) {
+  .hcard-builder {
+    display: block;
+    width: 100%;
+    padding: 4%;
+
+    .buttons {
+      font-size: .8rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: $mobile-width) {
+
+  .hcard-builder {
+    .left {
+       margin: 4px 0;
+       width: 100%;
+    }
+
+    .right {
+      margin: 4px 0;
+      width: 100%;
+    }
+  }
+}
