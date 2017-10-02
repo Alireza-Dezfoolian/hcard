@@ -27,7 +27,7 @@ Main front end libraries and technologies used in this project:
   - Sass
   - Google fonts
  
-### How to run this project localy?
+### How to run this project locally?
 Make sure you have node installed.
 1) In the folder run `npm install` or `yarn install`
 2) After everyhitng installed, run `npm start` or `yarn start`
